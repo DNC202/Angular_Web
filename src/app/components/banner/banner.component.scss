@@ -1,0 +1,58 @@
+.banner {
+    height: 600px;
+    margin: 0 24px 0 24px;
+    position: relative;
+    background-image: url("https://travelwp.physcode.com/main-demo/wp-content/uploads/sites/7/2023/07/home-banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+
+    .container {
+        width: 50vw;
+        color: #fff;
+        
+        .banner-title h1 {
+            font-size: calc(2vh + 3vw);
+            font-weight: bold;
+        }
+
+        .banner-text {
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .banner-search {
+            background-color: #fff;
+            color: #000;
+            border-radius: 50px;
+            padding: 24px;
+            justify-content: space-between;
+            display: flex;
+            
+
+            .tour-search-destination , .tour-search-date
+            {
+                display: flex;
+                flex-direction: column;                
+            }
+
+            .pa-destination, .pa-date {
+                color: gray;
+                border: none;
+                appearance: none;
+                
+                input:focus, select:focus {
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+    }
+}

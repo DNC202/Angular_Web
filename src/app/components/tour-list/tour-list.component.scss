@@ -1,0 +1,48 @@
+ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;    
+    li {
+        border: solid 1px rgb(219, 217, 217);
+        border-radius: 20px;
+
+        img {
+            width: 290px;
+            height: 220px;
+            border-radius: 20px 20px 0 0 ;
+        }
+
+        .container-tour {
+            padding: 16px;
+            font-size: 18px;
+
+            .container-heading ,h3 {                
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .container-rating ,p {
+                font-weight: 400;
+                margin-bottom: 10px;
+            }
+
+            .container-price-duration {
+                display: flex;
+                justify-content: space-between;
+                padding: 40px 0 20px 0;
+                border-top: solid 1px rgb(219, 217, 217);
+
+                .price {
+                    font-weight: bold;
+                }
+
+                .duration {
+                    color: gray;
+                    
+                }
+            }
+        }
+
+    }
+}

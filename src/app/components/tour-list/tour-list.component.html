@@ -1,0 +1,20 @@
+<ul>
+    <li *ngFor="let tour of tours">
+        <a href="#">
+            <img src="{{tour.thumbnail}}" alt="{{tour.title}} thumbnail">
+            <div class="container-tour">
+                <div class="container-heading">
+                    <h3>{{tour.title}}</h3>
+                </div>
+                <div class="container-rating">
+                    <i class="fas fa-star"></i>
+                    <p>{{tour.rating}}</p>
+                </div>
+                <div class="container-price-duration">
+                    <p class="price">${{tour.price}}</p>
+                    <p class="duration">{{tour.duration}}</p>
+                </div>  
+            </div>
+        </a>
+    </li>
+</ul>

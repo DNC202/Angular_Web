@@ -1,0 +1,73 @@
+<div class="title-container">
+    <p class="router">Home/Tours</p>
+    <h1 class="title">Tours</h1>
+    <p class="description">Explore experiences, spas, tours and more</p>
+</div>
+<div class="container">
+    <div class="wrapper-search-field">
+        <div class="tour-search-field">
+            <h3 class="item-filter-heading">Where & When</h3>
+            <select name="" id="destination">
+                <option value="0">All Destination</option>
+                <option value="London">London</option>
+                <option value="Paris">Paris</option>
+                <option value="Amsterdam">Amsterdam</option>
+                <option value="New York">New York</option>
+            </select>
+            <input type="text" placeholder="Select Dates">
+        </div>
+        <div class="tour-search-field-selection">
+            <h3 class="item-filter-heading">Selected</h3>
+            <button>Clear Filter</button>
+        </div>
+        <div class="tour-search-field-duration">
+            <h3 class="item-filter-heading">Duration</h3>
+            <!-- Checkbox "less than 1 day" --> 
+            <div class="container-checkbox">
+                <input type="checkbox" id="less-than-1-day" name="delivery_time" value="less_than_1_day">
+                <label for="less-than-1-day">Less than 1 day</label>
+            </div>
+            <br>
+
+            <!-- Checkbox "1 to 3 days" -->
+            <div class="container-checkbox">
+                <input type="checkbox" id="1-to-3-days" name="delivery_time" value="1_to_3_days">
+                <label for="1-to-3-days">1 to 3 days</label>
+            </div>
+            <br>
+
+            <!-- Checkbox "3+ days" -->
+            <div class="container-checkbox">
+                <input type="checkbox" id="3-plus-days" name="delivery_time" value="3_plus_days">
+                <label for="3-plus-days">3+ days</label>
+            </div>
+            <br>
+        </div>
+
+        <div class="tour-search-field-type">
+            <h3 class="item-filter-heading">Tour Types</h3>
+            
+            <!-- Checkbox "less than 1 day" --> 
+            <div class="container-checkbox">
+                <input type="checkbox" id="less-than-1-day" name="delivery_time" value="less_than_1_day">
+                <label for="less-than-1-day">Less than 1 day</label>
+            </div>
+            <br>
+
+            <!-- Checkbox "1 to 3 days" -->
+            <div class="container-checkbox">
+                <input type="checkbox" id="1-to-3-days" name="delivery_time" value="1_to_3_days">
+                <label for="1-to-3-days">1 to 3 days</label>
+            </div>
+            <br>
+
+            <!-- Checkbox "3+ days" -->
+            <div class="container-checkbox">
+                <input type="checkbox" id="3-plus-days" name="delivery_time" value="3_plus_days">
+                <label for="3-plus-days">3+ days</label>
+            </div>
+            <br>
+        </div>
+    </div>
+    <app-tour-list></app-tour-list>
+</div>
