@@ -1,20 +1,21 @@
 <div class="header">
     <div class="logo">
-        <img src="https://travelwp.physcode.com/main-demo/wp-content/uploads/sites/7/2023/07/logo-black.png" alt="Angular" />
+        a<img src="https://travelwp.physcode.com/main-demo/wp-content/uploads/sites/7/2023/07/logo-black.png" alt="Angular" />
     </div>
     <div class="nav-menu">
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="/tours">Tours</a></li>
-            <li><a href="">Destination</a></li>
-            <li><a href="">Blogs</a></li>
-            <li><a href="">About us</a></li>
+            <li><a [routerLink]="['/']">Home</a></li>
+            <li><a [routerLink]="['/tours']" >Tours</a></li>
+            <li><a [routerLink]="['/']">Destination</a></li>
+            <li><a [routerLink]="['/']">Blogs</a></li>
+            <li><a [routerLink]="['/']">About us</a></li>
         </ul>
     </div>
     <div class="container">
         <div class="mini-cart">
             <i class="fas fa-shopping-cart"></i>
         </div>
-        <button>Login</button>
+        <a [routerLink]="['/login']"><button>Login</button></a>
+        
     </div>
 </div>
