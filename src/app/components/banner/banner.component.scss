@@ -27,32 +27,5 @@
             margin-top: 20px;
             margin-bottom: 20px;
         }
-
-        .banner-search {
-            background-color: #fff;
-            color: #000;
-            border-radius: 50px;
-            padding: 24px;
-            justify-content: space-between;
-            display: flex;
-            
-
-            .tour-search-destination , .tour-search-date
-            {
-                display: flex;
-                flex-direction: column;                
-            }
-
-            .pa-destination, .pa-date {
-                color: gray;
-                border: none;
-                appearance: none;
-                
-                input:focus, select:focus {
-                    border: none;
-                    outline: none;
-                }
-            }
-        }
     }
 }

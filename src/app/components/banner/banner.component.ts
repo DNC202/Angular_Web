@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import { SearchComponent } from '../search/search.component';
 
 @Component({
   selector: 'app-banner',
   standalone: true,
-  imports: [],
+  imports: [
+    SearchComponent
+  ],
   templateUrl: './banner.component.html',
   styleUrl: './banner.component.scss'
 })

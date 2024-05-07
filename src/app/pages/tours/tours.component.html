@@ -7,12 +7,13 @@
     <div class="wrapper-search-field">
         <div class="tour-search-field">
             <h3 class="item-filter-heading">Where & When</h3>
-            <select name="" id="destination">
-                <option value="0">All Destination</option>
+            <select name="destination" id="destination" class="pa-destination" [(ngModel)]="selectedDestination">
+                <!-- <option value="0">Search a place or activity</option>
                 <option value="London">London</option>
                 <option value="Paris">Paris</option>
                 <option value="Amsterdam">Amsterdam</option>
-                <option value="New York">New York</option>
+                <option value="New York">New York</option> -->
+                <option *ngFor="let item of destinations" [value]="item.id">{{item.name}}</option>
             </select>
             <input type="text" placeholder="Select Dates">
         </div>
@@ -67,7 +68,11 @@
                 <label for="3-plus-days">3+ days</label>
             </div>
             <br>
+
+            <div class="button">
+                <button (click)="search()">Search Tour</button>
+            </div>
         </div>
     </div>
-    <app-tour-list></app-tour-list>
+    <app-tour-list [tours]="tours"></app-tour-list>
 </div>

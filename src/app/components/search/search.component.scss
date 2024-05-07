@@ -1,0 +1,47 @@
+.banner-search {
+    background-color: #fff;
+    color: #000;
+    border-radius: 3rem;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+    display: flex;
+    
+
+    .tour-search-destination , .tour-search-date
+    {
+        display: flex;       
+        justify-content: center;
+        align-items: center;    
+    }
+
+    .search-wrapper {
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pa-destination, .pa-date {
+        margin-top: .2rem;
+        color: rgb(219, 217, 217);
+        border: none;
+        appearance: none;
+    }
+
+    .pa-destination:focus, .pa-date:focus {
+        outline: none;  
+        border: none; 
+        box-shadow: 0 0 5px rgb(255, 255, 255);
+    }
+
+    .search-button button {
+        background-color: #01aa90;
+        color: #fff;
+        border-radius: 3rem;
+        border: none;
+        padding: 10px; 
+        width: 2.5rem;
+        height: 2.5rem;
+        align-items: center;
+    }
+}

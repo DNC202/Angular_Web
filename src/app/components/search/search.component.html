@@ -1,0 +1,32 @@
+<div class="banner-search">
+    <div class="tour-search-destination">
+        <span>
+            <i class="fas fa-map-marker-alt"></i>
+        </span>
+        <div class="search-wrapper">
+            <label for="destination" class="item-filter-heading">Where To?</label>
+            <select name="destination" id="destination" class="pa-destination" [(ngModel)]="selectedDestination">
+                <!-- <option value="0">Search a place or activity</option>
+                <option value="London">London</option>
+                <option value="Paris">Paris</option>
+                <option value="Amsterdam">Amsterdam</option>
+                <option value="New York">New York</option> -->
+                <option *ngFor="let item of destinations" [value]="item.id">{{item.name}}</option>
+            </select>
+        </div>                
+    </div>
+    <div class="tour-search-date">
+        <span>
+            <i class="fa-regular fa-calendar"></i>
+        </span>
+        <div class="search-wrapper">
+            <label for="date" class="item-filter-heading">When?</label>
+            <input type="date" placeholder="Select dates" id="date" class="pa-date">
+        </div>
+    </div>
+    <div class="search-button">
+        <button type="button" (click)="search()">
+            <i class="fas fa-magnifying-glass"></i>
+        </button>
+    </div>
+</div>
