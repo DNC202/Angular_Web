@@ -7,15 +7,10 @@
     <div class="wrapper-search-field">
         <div class="tour-search-field">
             <h3 class="item-filter-heading">Where & When</h3>
-            <select name="destination" id="destination" class="pa-destination" [(ngModel)]="selectedDestination">
-                <!-- <option value="0">Search a place or activity</option>
-                <option value="London">London</option>
-                <option value="Paris">Paris</option>
-                <option value="Amsterdam">Amsterdam</option>
-                <option value="New York">New York</option> -->
+            <select aria-label="label for the select" name="destination" id="destination" class="pa-destination" [(ngModel)]="selectedDestination">
                 <option *ngFor="let item of destinations" [value]="item.id">{{item.name}}</option>
             </select>
-            <input type="text" placeholder="Select Dates">
+            <input type="date" placeholder="Select Dates">
         </div>
         <div class="tour-search-field-selection">
             <h3 class="item-filter-heading">Selected</h3>
@@ -68,11 +63,10 @@
                 <label for="3-plus-days">3+ days</label>
             </div>
             <br>
-
-            <div class="button">
-                <button (click)="search()">Search Tour</button>
-            </div>
+        </div>
+        <div class="button">
+            <button (click)="search()">Search Tour</button>
         </div>
     </div>
-    <app-tour-list [tours]="tours"></app-tour-list>
+    <app-tour-list [tours]="toursSearch"></app-tour-list>
 </div>

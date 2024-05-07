@@ -90,14 +90,22 @@
                 }
 
                 label {
-                    font-size: 16px;
+                    font-size: 1rem;
                     font-weight: 500;
                     margin-left: 10px;
                     color: #4f5e71;
                     opacity: .9;
                 }
             }
-            
+        }
+        .button button {
+            background-color: #01aa90;
+            padding: 1rem;
+            margin: 1rem;
+            width: 90%;
+            border: none;
+            border-radius: 3rem;
+            color: #fff;
         }
     }
 }

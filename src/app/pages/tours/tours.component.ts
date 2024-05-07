@@ -42,25 +42,27 @@ export class ToursComponent {
     },
   ];
 
-  tours:Tour[] = [];
+  toursSearch:Tour[] = [];
   selectedDestination!:number;
   constructor(private tourService:ToursService, private route:ActivatedRoute, private router:Router) {}
 
   ngOnInit(): void {
+    this.toursSearch = this.tourService.getAllTours();
     this.route.params.subscribe(params => {
       if(params['selectedDestination'])
         this.selectedDestination = params['selectedDestination'];
-    })
+    });
   }
 
   search(): void {
+    
     if(this.selectedDestination != 0) {
       // this.router.navigateByUrl('/tours/' + this.selectedDestination)
-      this.tours = this.tourService.getAllTours().filter((tour) => tour.destination == this.selectedDestination)
-      console.log(this.tours)
+      this.toursSearch = this.tourService.getAllTours().filter((tour) => tour.destination == this.selectedDestination)
+      console.log(this.toursSearch)
     }
     else {
-      this.tours = this.tourService.getAllTours();
+      this.toursSearch = this.tourService.getAllTours();
     }
   }
 }
